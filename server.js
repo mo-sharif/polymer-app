@@ -1,8 +1,8 @@
 var express = require('express');
-//var express = require('express');
-const app = express();
+var app = express();
 var morgan = require('morgan');
 var authUser = require('./app/services/authService');
+const PORT = process.env.PORT || 3000
 
 //var mongoose = require('mongoose');
 
@@ -42,6 +42,4 @@ app.get('/igProfile', function (request, response) {
 */
 });
 
-app.listen(3000);
-console.log('Magic: App is runung on port 3000');
-
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
