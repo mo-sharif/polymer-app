@@ -1,6 +1,6 @@
 var in_client_id = '27e222348f3b45039110a221da8be367',
     in_client_secret = '8af3b9b5c92b465a890f8ae7e40ae15a',
-    in_redirect_uri = 'http://ec2-54-236-249-79.compute-1.amazonaws.com:3000/auth',
+    in_redirect_uri = 'https://promania.herokuapp.com/auth',
     in_auth_url = 'https://api.instagram.com/oauth/authorize/?client_id='
                   + in_client_id + '&redirect_uri='
                   + in_redirect_uri + '&response_type=code';
