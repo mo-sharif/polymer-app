@@ -8,8 +8,9 @@ var mongoose = require('mongoose');
 
 
 var config = require('./config/config');
+mongoose.connect('mongodb://user_of_themonth:jagsohwell2018@ds261342.mlab.com:61342/promania');
 
-mongoose.connect(config.db.uri);
+//mongoose.connect(config.db.uri);
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
