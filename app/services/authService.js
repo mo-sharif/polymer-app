@@ -1,7 +1,7 @@
 var httpRequest = require('request');
 
 var config = require('../../config/config');
-var User = require('../models/User');
+var User = require('../../models/User');
 
 module.exports = function (req, res) {
 
