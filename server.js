@@ -13,7 +13,8 @@ var config = require('./config/config');
 mongoose.connect(config.db.uri);
 
 app.use(morgan('dev'));
-app.use(express.static(__dirname + '/public'));
+
+app.use(express.static('public'));
 
 app.get('/', function (request, response) {
         response.sendfile('./public/index.html')
