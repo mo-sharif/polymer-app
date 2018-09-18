@@ -1,7 +1,7 @@
 var httpRequest = require('request');
 
 var config = require('../../config/config');
-//var User = require('../models/User');
+var User = require('../models/User');
 
 module.exports = function (req, res) {
 
@@ -28,18 +28,13 @@ module.exports = function (req, res) {
                                 website: r.user.website,
                                 profile_picture: r.user.profile_picture,
                                 access_token: r.access_token
-                        }; /*
+                        }; 
                         User.create(user, function (error) {
                                 if (error) res.send(error);
-                                res.redirect('/');
-                        })*/
-//res.send(user.access_token;)
-/*
-res.redirect('/igProfile?userName=' + user.username + '&fullName='+ user.full_name +'&bio='+user.bio + '&pic=' + user.profile_picture$
-console.log(user.username + ' ' + user.full_name);
-*/
+                                res.redirect('/igProfile?token=' + user.access_token);
+                        })
 
-res.redirect('/igProfile?token=' + user.access_token);
+
                 }
         });
 

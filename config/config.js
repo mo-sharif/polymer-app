@@ -4,13 +4,13 @@ var in_client_id = '27e222348f3b45039110a221da8be367',
     in_auth_url = 'https://api.instagram.com/oauth/authorize/?client_id='
                   + in_client_id + '&redirect_uri='
                   + in_redirect_uri + '&response_type=code';
-/*
-var db_user = 'user',
-    db_password = 'pass',
+
+var db_user = 'irottweiler',
+    db_password = 'Livia1990$',
     db_uri = 'mongodb://'
              + db_user + ':'
-             + db_password + '@ds157469.mlab.com:57469/instagram_auth';
-*/
+             + db_password + '@ds261342.mlab.com:61342/promania';
+
 module.exports = {
   port: process.env.PORT || 3000,
   instagram: {
@@ -21,7 +21,7 @@ module.exports = {
   }
 };
 
-/*
+
 module.exports = {
   port: process.env.PORT || 3000,
   db: {
@@ -34,4 +34,4 @@ module.exports = {
   }
 };
 
-*/
+
