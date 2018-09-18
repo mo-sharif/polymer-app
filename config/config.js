@@ -5,8 +5,8 @@ var in_client_id = '27e222348f3b45039110a221da8be367',
                   + in_client_id + '&redirect_uri='
                   + in_redirect_uri + '&response_type=code';
 
-var db_user = 'irottweiler',
-    db_password = 'Livia1990$',
+var db_user = 'user_of_themonth',
+    db_password = 'jagsohwell2018',
     db_uri = 'mongodb://'
              + db_user + ':'
              + db_password + '@ds261342.mlab.com:61342/promania';
