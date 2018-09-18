@@ -13,6 +13,9 @@ var db_user = 'user_of_themonth',
 
 module.exports = {
   port: process.env.PORT || 3000,
+  db: {
+    uri: db_uri
+  },
   instagram: {
     client_id: in_client_id,
     client_secret: in_client_secret,
@@ -20,18 +23,3 @@ module.exports = {
     redirect_uri: in_redirect_uri
   }
 };
-
-
-module.exports = {
-  port: process.env.PORT || 3000,
-  db: {
-    uri: db_uri
-  },
-  instagram: {
-    client_id: in_client_id,
-    client_secret: in_client_secret,
-    auth_url: in_auth_url
-  }
-};
-
-
