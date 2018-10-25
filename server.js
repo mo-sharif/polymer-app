@@ -30,4 +30,10 @@ app.get('/igProfile', function (request, response) {
 
 });
 
+app.get('/posts', function(req, res) {
+ 
+        res.json({"success": true});
+     
+    });
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
