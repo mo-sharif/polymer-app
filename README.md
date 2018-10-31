@@ -2,8 +2,9 @@
 
 Connecting People with Businesses through Instagram
 
+Back end built on Hackathon Starter: A boilerplate for Node.js web applications.
+
 Front end built using Ionic v4 and Angular
-Back end built using nodeJS/expressJS
 
 ## Links
 
